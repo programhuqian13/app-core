@@ -1,5 +1,6 @@
 package org.tony.core.base.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -10,9 +11,9 @@ import java.util.Date;
  * @ProjectName app-core
  * @PackageName org.tony.core.base.entity
  */
-public class BaseEntity {
+public class BaseEntity<ID> implements Serializable{
 
-    private Long id;
+    private ID id;
 
     private Long createById;
 
@@ -26,11 +27,11 @@ public class BaseEntity {
 
     private Date updateTime;
 
-    public Long getId() {
+    public ID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(ID id) {
         this.id = id;
     }
 
