@@ -3,7 +3,7 @@ package org.tony.core.base.service.impl;
 import org.tony.core.base.service.BaseService;
 
 /**
- * @Description 描述
+ * @Description 相应的实现
  * @Version 1.0
  * @Author tony
  * @Date 2018/3/2
@@ -12,6 +12,6 @@ import org.tony.core.base.service.BaseService;
  */
 public abstract class BaseServiceImpl<T,ID> implements BaseService<T,ID>{
 
-    
+
 
 }
