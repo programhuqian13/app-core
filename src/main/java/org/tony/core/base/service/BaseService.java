@@ -34,13 +34,13 @@ public interface BaseService<T,ID> {
      * 批量删除 根据编号批量删除
      * @param ids
      */
-    void deleteByIds(Iterable<ID> ids);
+    void deleteByIds(List<ID> ids);
 
     /***
      * 批量添加操作
      * @param entitys
      */
-    void batchInsert(Iterable<T> entitys);
+    void batchInsert(List<T> entitys);
 
     /***
      * 根据编号查询
@@ -60,12 +60,12 @@ public interface BaseService<T,ID> {
      * 添加重命名查询
      * @return
      */
-    T isExitsName();
+    T isExitsName(String name);
 
     /***
      * 修改重命名查询
      * @return
      */
-    T updateExitsName();
+    T updateExitsName(String name);
 
 }

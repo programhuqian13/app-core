@@ -9,4 +9,7 @@ package org.tony.core.base.web;
  * @PackageName org.tony.core.base.web
  */
 public class BaseController {
+
+
+
 }
